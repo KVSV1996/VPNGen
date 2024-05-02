@@ -1,0 +1,129 @@
+﻿<Window x:Class="VPNGen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VPNGen"
+        mc:Ignorable="d"
+        Title="VPNGen" Height="400" Width="350">
+    <Grid Background="LightSlateGray">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+           
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Количество учёток:"
+                   FontSize="14"
+                   FontWeight="DemiBold"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="15"
+                   VerticalAlignment="Center">
+        </TextBlock>
+
+        <TextBlock Text="Префикс логина:"
+                   FontSize="14"
+                   FontWeight="DemiBold"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="15"
+                   VerticalAlignment="Center">
+        </TextBlock>
+
+        <TextBlock Text="Началный номер:"
+                   FontSize="14"
+                   FontWeight="DemiBold"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="15,0,0,0"
+                   VerticalAlignment="Center" Grid.ColumnSpan="2" >
+        </TextBlock>
+
+        <TextBlock Text="Profile:"
+                   FontSize="14"
+                   FontWeight="DemiBold"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="15"
+                   VerticalAlignment="Center">
+        </TextBlock>
+
+        <TextBlock Text="Service:"
+                   FontSize="14"
+                   FontWeight="DemiBold"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   HorizontalAlignment="Left"
+                   Margin="15"
+                   VerticalAlignment="Center">
+        </TextBlock>
+
+       
+
+        <TextBox
+            Name="textBox1"
+            Width="150"
+            Height="20"
+            Grid.Row="0"
+            Grid.Column="1">
+        </TextBox>
+
+        <TextBox
+            Name="textBox2"
+            Width="150"
+            Height="20"
+            Grid.Row="1"
+            Grid.Column="1">
+        </TextBox>
+
+        <TextBox
+            Name="textBox3"
+            Width="150"
+            Height="20"
+            Grid.Row="2"
+            Grid.Column="1">
+        </TextBox>
+
+        <TextBox
+            Name="textBox4"
+            Width="150"
+            Height="20"
+            Grid.Row="3"
+            Grid.Column="1">
+        </TextBox>
+
+        <TextBox
+            Name="textBox5"
+            Width="150"
+            Height="20"
+            Grid.Row="4"
+            Grid.Column="1">
+        </TextBox>
+
+        <Button x:Name="generateButton"
+                Content="Сгенерировать"
+                Width="200"
+                Height="40"
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Click="Button_Click">
+        </Button>
+       
+
+    </Grid>
+</Window>
